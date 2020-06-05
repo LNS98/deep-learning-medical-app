@@ -13,8 +13,6 @@ Team members:
 Supervisor:
 - Dr. Bernard Kainz
 
-Gitlab Link: https://gitlab.doc.ic.ac.uk/cpm19/softwareengineering_group_project
-
 ## Introduction and Motivation
 Crohn's disease is a lifelong inflammatory bowel disease. 
 The prevalence in the UK is about 145 per 100,000 people [3]. The inflammation caused by Crohn's disease often spreads deep into the layers of affected bowel tissue. A segment of the small intestine, the ileum, is a particularly sensitive area which is most likely to develop Crohn's disease [1], and Computed Tomography (CT) and Magnetic Resonance Imaging (MRI) images are used to help diagnose the disease.  To date, radiologists and clinicians manually inspect the scans to diagnose the patient. This can be a slow process, which requires significant time from clinicians/radiologists. 
@@ -86,7 +84,7 @@ start_tfserving_container_gpu.sh` depending on preference.
 
 Access the application at `localhost:3000` in web-browser.
 
-Or if the host machine has a defined address, access at: `host_address:3000` e.g. `dudley.doc.ic.ac.uk:3000`
+Or if the host machine has a defined address, access at: `host_address:3000`
 
 ## Note on Coordinates
 
@@ -105,8 +103,6 @@ A brief explanation of the important files
 - `/back-end/api.py` - Server code written using Flask.
 
 - `/back-end/model_client.py` - Called in `api.py` to serve model container and return results.
-
-- `/examples` - Contains example .nii images
 
 - `/front-end` - Contains JavaScript front-end code written using React. 
 
