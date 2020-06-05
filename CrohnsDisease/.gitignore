@@ -1,0 +1,29 @@
+copied_data/
+mricron_lx/
+venv/
+DLTK/
+example_code/
+*.pyc
+
+# Tensorflow
+*logdir/
+*/saved_logs/
+events.*
+*log*
+
+# TFRecord data
+*.tfrecords
+
+# Other logs
+out
+
+# Images
+images/
+*.png
+*.jpg
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Other
+scripts/multi.py 

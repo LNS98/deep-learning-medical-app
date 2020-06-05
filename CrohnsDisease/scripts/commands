@@ -1,0 +1,10 @@
+# ---- CT Wrangling
+
+# Lists subdirectories that contain at least 200 files
+find . -maxdepth 6 -type d -exec bash -c "echo -ne '{}, '; ls -b '{}' | wc -l" \; | awk '$NF>=200' > cases/studies_p
+
+# Removes lines with length less than 5
+sed -r '/^.{,5}$/d' cases/studies_p > cases/studies_q
+
+# Removes last word of each line
+sed s/'\w*$'// cases/studies > cases/studies_p

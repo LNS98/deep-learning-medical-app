@@ -1,0 +1,52 @@
+version: '3'
+
+services:
+
+#############################
+#   Setup server container
+#############################
+  server:
+    build: ./back-end
+    expose:
+      - ${APP_SERVER_PORT}
+    environment:
+      API_HOST: ${API_HOST}
+      APP_SERVER_PORT: ${APP_SERVER_PORT}
+    external_links:
+      - "crohns"
+    ports:
+      - ${APP_SERVER_PORT}:${APP_SERVER_PORT}
+    networks:
+      - CrohnsNetwork
+
+#     volumes:
+#       - ./back-end/src:/usr/srv/app/admin_server/src
+# #    command: node index.js
+
+
+#############################
+#   Setup client container
+#############################
+  client:
+    build:
+      context: ./front-end
+      args:
+        - port=${APP_CLIENT_PORT}
+    environment:
+      - APP_CLIENT_PORT=${APP_CLIENT_PORT}
+    expose:
+      - ${APP_CLIENT_PORT}
+    ports:
+      - ${APP_CLIENT_PORT}:${APP_CLIENT_PORT}
+    #volumes:
+    #  - ./front-end:/usr/srv/app/admin_client
+    #  - /usr/srv/app/admin_client/node_modules
+    links:
+      - server
+    networks:
+      - CrohnsNetwork
+#    command: npm start
+
+
+networks:
+  CrohnsNetwork:
