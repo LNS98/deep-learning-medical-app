@@ -32,7 +32,7 @@ The general approach was to implement a web browser-based tool such that the cli
 
 The following software is presented in this repo:
 
-- Web application
+- Web application 
     - Front-end and back-end
 - Pre-trained prediction model
 
