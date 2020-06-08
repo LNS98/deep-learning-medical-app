@@ -38,12 +38,12 @@ The following software is presented in this repo:
 
 ## User Interface
 
-![arch](https://github.com/LNS98/deep-learning-medical-app/edit/master/front-end-scrn.png "User interface")
+![arch](https://github.com/LNS98/deep-learning-medical-app/blob/master/front-end-scrn.png "User interface")
 
 
 ## Product Architecture 
 
-![arch](https://github.com/LNS98/deep-learning-medical-app/edit/master/architecture.png "Product architecture schematic")
+![arch](https://github.com/LNS98/deep-learning-medical-app/blob/master/architecture.png "Product architecture schematic")
 
 Each component of the application is contained within its own docker container, and communicate through docker container networking. 
 
