@@ -5,7 +5,7 @@ Group software engineering project, Spring 2020.
 Team members:
 - Toby Godwin
 - Yoanna Peneva 
-- Ahmed Djermani
+- Ahmed Djermani 
 - George Yiasemis
 - Charles Metz
 - Lorenzo Niccolini
