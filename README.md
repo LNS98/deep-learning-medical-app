@@ -41,7 +41,7 @@ The following software is presented in this repo:
 ![arch](https://github.com/LNS98/deep-learning-medical-app/blob/master/front-end-scrn.png "User interface")
 
 
-## Product Architecture 
+## Product Architecture
 
 ![arch](https://github.com/LNS98/deep-learning-medical-app/blob/master/architecture.png "Product architecture schematic")
 
@@ -57,17 +57,17 @@ The docker containers pre-package all of the dendencies required to host the app
 - Docker Compose 1.25.4
 
 With GPU version, add:
-- cudnntoolkit    10.0.130 
+- cudnntoolkit    10.0.130
 - cudnn 7.6.5_cuda10.0_0
-          
+
 
 ## Initialising Application
 
 Navigate to desired location to store code.
 
-- `git clone https://gitlab.doc.ic.ac.uk/cpm19/softwareengineering_group_project.git`
+- Clone the repo
 
-- `cd softwareengineering_group_project`
+- `cd deep-learning-medical-app`
 
 - `docker-compose up` - Note this may take ~5 minutes
 
@@ -77,7 +77,7 @@ Navigate to desired location to store code.
 
 - `cd softwareengineering_group_project/start-app`
 
-- `sh start_tfserving_container_cpu.sh` or `sh 
+- `sh start_tfserving_container_cpu.sh` or `sh
 start_tfserving_container_gpu.sh` depending on preference.
 
 ## Accessing Application
