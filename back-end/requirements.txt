@@ -1,4 +1,4 @@
-git+git://github.com/epigramai/tfserving-python-predict-client.git
+git+https://github.com/epigramai/tfserving-python-predict-client.git
 Flask==1.0.2
 flask_cors
 SimpleITK
