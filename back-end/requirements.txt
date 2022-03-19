@@ -19,4 +19,4 @@ tensorflow-estimator==1.14.0
 tensorflow==1.14.0
 dltk
 matplotlib
-
+itsdangerous==2.0.1
