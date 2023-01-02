@@ -15,7 +15,7 @@
     "react-dropzone": "^10.2.2",
     "react-icons": "^3.9.0",
     "react-loading-overlay": "^1.0.1",
-    "react-scripts": "3.4.0"
+    "react-scripts": "5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
